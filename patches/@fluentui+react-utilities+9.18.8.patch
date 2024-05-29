@@ -1,0 +1,15 @@
+diff --git a/node_modules/@fluentui/react-utilities/dist/index.d.ts b/node_modules/@fluentui/react-utilities/dist/index.d.ts
+index 3febebc..5d7dc8b 100644
+--- a/node_modules/@fluentui/react-utilities/dist/index.d.ts
++++ b/node_modules/@fluentui/react-utilities/dist/index.d.ts
+@@ -790,8 +790,9 @@ export declare type UnionToIntersection<U> = (U extends unknown ? (x: U) => U :
+  * This should ONLY be used in type templates as in `extends UnknownSlotProps`;
+  * it shouldn't be used as the type of a slot.
+  */
+-export declare type UnknownSlotProps = Pick<React_2.HTMLAttributes<HTMLElement>, 'children' | 'className' | 'style'> & {
++export declare type UnknownSlotProps = Pick<React_2.HTMLAttributes<HTMLElement>, 'className' | 'style'> & {
+     as?: keyof JSX.IntrinsicElements;
++    children?: any;
+ };
+ 
+ /**
